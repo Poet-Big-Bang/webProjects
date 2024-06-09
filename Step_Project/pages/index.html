@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RamenJa</title>
+    <link rel="stylesheet" href="/Step_Project/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Zeyada&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="tel-number"><a href="tel:+1234567890" class="phone-btn">+420 775 694 798</a></div>
+        <div class="logo"> </div>
+        <div class="adress">
+            <a href="https://www.google.com/maps/place/Opletalova+1418%2F23,+110+00+Nové+Město/@50.0831518,14.4292461,17z/data=!3m1!4b1!4m6!3m5!1s0x470b94937363f49b:0x66749cf4dcb3e64c!8m2!3d50.0831484!4d14.431821!16s%2Fg%2F11b8v48531?entry=ttu"
+                class="adress_btn" target="_blank">Opletalova 23, 110 00</a>
+        </div>
+
+    </header>
+    <hr>
+
+    <nav class="pages">
+        <div><a class="a-pages" href="index.html">HOME</a></div>
+        <div><a class="a-pages" href="reservation.html" target="_blank">RESERVATION</a></div>
+        <div><a class="a-pages" href="contacts.html" target="_blank">CONTACTS</a></div>
+        <div><a class="a-pages" href="menu.html" target="_blank">ORDER ONLINE</a></div>
+        <div><a class="a-pages" href="/Step_Project/pages/cart.html" target="_blank"><img class="cart"
+                    src="/Step_Project/img/cart.png" alt=""></a>
+        </div>
+    </nav>
+
+
+    <div class="gallery">
+        <div class="gallery-item image1">
+            <img src="/Step_Project/img/the-taste-of-asia.jpg" alt="Image 1">
+            <div class="text-overlay">
+                <h2>THE TASTE OF ASIA</h2>
+            </div>
+        </div>
+        <div class="gallery-item image2" onclick="scrollToElement('h1.about')">
+            <img src="/Step_Project/img/stories.jpg" alt="Image 2">
+            <div class="text-overlay">
+                <h2>STORY</h2>
+            </div>
+        </div>
+        <div class="gallery-item image3" onclick="scrollToElement('h1.menu')">
+            <img src="/Step_Project/img/interier.jpg" alt="Image 3">
+            <div class="text-overlay">
+                <h2>MENU</h2>
+            </div>
+        </div>
+        <div class="gallery-item image4" onclick="scrollToElement('h1.vibe')">
+            <img src="/Step_Project/img/menu.jpg" alt="Image 4">
+            <div class="text-overlay">
+                <h2>INTERIOR</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <main>
+        <div class="video-container">
+            <video id="myVideo" width="" height="" controls poster="/Step_Project/img/prev.jpg">
+                <source src="/Step_Project/video/Our Kitchen.mp4" type="video/mp4">
+            </video>
+            <div id="video-title">
+                <h2>Our</h2> <img src="/Step_Project/img/play.png" alt="">
+                <h2>kitchen</h2>
+            </div>
+        </div>
+
+
+        <h1 class="about">ABOUT US</h1>
+        <div class="card-about-us">
+            <div class="card-about-us-content">
+                <div class="text-container">
+                    <p class="summary-text">The Story of "RamenJa" Restaurant</p>
+                    <div class="hidden-text">
+                        <h2>Chapter 1: The Beginning</h2>
+                        <p>In the small Armenian town of Abovyan lived a young man named Spartak. From a young age, he
+                            loved watching his grandmother cook traditional Armenian dishes. He especially loved the
+                            "kharcho"
+                            soup, which his grandmother made according to a special family recipe. However, Spartak was
+                            always open to new culinary experiences and dreamed of trying his hand at different
+                            cuisines.
+                            One day, after tasting ramen at a rare Japanese restaurant in Yerevan, he became fascinated
+                            with
+                            the idea of making it himself.</p>
+
+
+                        <h2>Chapter 2: Seeking Inspiration</h2>
+                        <p>After finishing school, Spartak went to Tokyo to study culinary arts. He worked in various
+                            restaurants, learning the secrets of making ramen. In one of the old ramen shops, he met
+                            Master
+                            Haruto, who became his mentor. Haruto taught Spartak not only the technique but also the
+                            philosophy of cooking: "Ramen is not just a soup, it's a soul poured into every bowl."</p>
+
+                        <h2>Chapter 3: Returning Home</h2>
+                        <p>Gaining experience, Spartak returned to his hometown of Abovyan and started making ramen for
+                            his
+                            friends and family. His recipes quickly became popular, and many suggested he open his own
+                            restaurant. Spartak dreamed of sharing his culinary art with as many people as possible, and
+                            soon he had the opportunity to move to Europe.</p>
+
+                        <h2>Chapter 4: Prague – A New Home</h2>
+                        <p>Spartak chose Prague, the capital of the Czech Republic, for his new venture. The city, rich
+                            in
+                            history and culture, attracted many tourists, making it an excellent place to open a
+                            restaurant.
+                            While searching for a suitable location, Spartak met Dmitry, a talented marketer from
+                            Russia,
+                            who shared his passion for ramen. Dmitry had years of experience working in various European
+                            restaurants and was looking for a new challenge. They quickly became friends and decided to
+                            open
+                            the restaurant together.</p>
+
+                        <p>Spartak and Dmitry found a cozy location in the city center and started renovations. Dmitry
+                            developed a marketing strategy to attract attention to their new establishment, while
+                            Spartak
+                            focused on the culinary aspect. They named their restaurant "RamenJa" – combining the
+                            Japanese
+                            ramen and the Armenian "ja" (meaning "my" in Armenian), symbolizing the fusion of two
+                            cultures.
+                        </p>
+
+                        <h2>Chapter 5: The Opening of the Restaurant</h2>
+                        <p>On the day of the "RamenJa" opening, Spartak and Dmitry were very nervous. Spartak carefully
+                            prepared all the ingredients according to the best Japanese recipes, adding touches of
+                            Armenian
+                            cuisine, while Dmitry ensured everyone knew about the opening. In the evening, the
+                            restaurant
+                            was filled with guests, including locals and tourists. One guest, a Japanese man, even
+                            remarked
+                            that their ramen reminded him of home, which was the highest praise for the young
+                            entrepreneurs.
+                        </p>
+
+                        <h2>Chapter 6: The Path to Success</h2>
+                        <p>"RamenJa" quickly became a popular spot in Prague. Spartak constantly experimented, adding
+                            new
+                            dishes and improving old recipes, while Dmitry developed and refined the marketing strategy.
+                            They created unique ramen dishes with local Czech and Armenian ingredients, attracting both
+                            locals and tourists. Their restaurant became known not only for its delicious food but also
+                            for
+                            its warm atmosphere, where every guest felt at home.</p>
+                        <h2>Chapter 7: New Horizons</h2>
+                        <p>Over time, Spartak and Dmitry decided to expand their business. They opened several "RamenJa"
+                            branches in other European cities, and then overseas. Despite the success and expansion,
+                            they
+                            always remembered their roots and strived to preserve the traditions passed down by their
+                            families and Master Haruto.</p>
+
+                        <h3>Today, "RamenJa" is not just a chain of restaurants but a symbol of love for Japanese
+                            cuisine
+                            and respect for Armenian and Russian traditions. Spartak and Dmitry continue to develop
+                            their
+                            business, staying true to their principle: "Every bowl of ramen must be made with soul."
+                        </h3>
+                    </div>
+                </div>
+                <button class="learn-more" onclick="toggleText(this)">Learn More</button>
+            </div>
+            <div class="img-about-us"><img src="/Step_Project/img/about us.jpeg" alt="Image description"></div>
+        </div>
+        <h1 class="menu">OUR RAMEN MENU</h1>
+        <h3 class="menu">the taste of asia</h3>
+
+        <div class="menu-grid">
+            <div class="card-menu">
+                <div class="img"><img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="..."></div>
+
+                <div class="card-body">
+                    <h5 class="card-text">NARUTO</h5>
+                    <p class="card-text">PORK BROTH, NOODLES, TEA PICKLED EGG, 5 SPICES PORK BELLY, MISO, GARLIC,
+                        GINGER, BAMBOO SHOOTS, NORI SEAWEED</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+
+
+            <div class="card-menu">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SHOYU BEEF TERIYAKI</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,EDAMAME, PICKLED RADISH, GINGER, AONORI SEAWEED</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SPICY PUMPKIN</h5>
+                    <p class="card-text">FRIED PUMPKIN / ROLLED PORK BELLY, VEGGIE BROTH, PUMPKIN, COCONUT MILK,
+                        CURRY, NOODLES, TEA PICKLED EGG, PICKLED RED ONION, CORIANDER, SEEDS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SPARTAK</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+            <div class="card-menu">
+                <img src="/Step_Project/img/naruto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">SHOYU BEEF SOUTH CAROLINA</h5>
+                    <p class="card-text">BEEF BROTH, NOODLES, TEA PICKLED EGG, SHREDDED BEEF SHOULDER,
+                        SESAME,MUSTARD, LITTLE GEM, SWEET CORN, PEANUTS</p>
+                    <p class="card-text">-250kč</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="vibe">Our VIBE</h1>
+        <div class="slideshow">
+            <img src="/Step_Project/img/interior1.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior2.jpeg" class="img-slide">
+            <img src="/Step_Project/img/interior3.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior4.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior5.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior6.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior7.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior8.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior9.jpg" class="img-slide">
+            <img src="/Step_Project/img/interior10.jpg" class="img-slide">
+            <button class="image-button-left" id="prevBtn"> </button>
+            <button class="image-button-right" id="nextBtn"> </button>
+        </div>
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <div class="faces">
+            <h1 class="facebehinde">Faces behinde the project</h1>
+            <div class="card-face">
+                <img src="/Step_Project/img/spartak.png" alt="spartak">
+                <div class="card-face-title">
+                    <h1 class="first">Spartak</h1>
+                    <h2 class="second">Chef</h2>
+                    <h3 class="third">Creator of delicious ramen inspired by traditional recipes and innovative software
+                        solutions for the restaurant business.</h3>
+                    <div class="socmedia">
+                        <a href="https://www.linkedin.com/in/spartak-movsisian-00a385267/" target="_blank"><img
+                                src="/Step_Project/img/free-icon-linkedin-2504923.png" alt="link"></a>
+                        <a href="https://www.instagram.com/poet_big_bang/" target="_blank"><img
+                                src="/Step_Project/img/free-icon-instagram-2111463.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-face"><img src="/Step_Project/img/dima1.png" alt="dima">
+                <div class="card-face-title">
+                    <h1 class="first">Dmitriy</h1>
+                    <h2 class="second">CMO</h2>
+                    <h3 class="third">I am a marketer at a ramen restaurant. My task is to attract customers, promote
+                        dishes, and create a unique experience for visitors</h3>
+                    <div class="socmedia">
+                        <a href="https://www.linkedin.com/in/dmitriy-yablunovskiy-36885025b/" target="_blank"><img
+                                src="/Step_Project/img/free-icon-linkedin-2504923.png" alt="link"></a>
+                        <a href="https://www.instagram.com/di_yabloko?igsh=eXQ5MXJxZDhpaG9s&utm_source=qr"
+                            target="_blank"><img src="/Step_Project/img/free-icon-instagram-2111463.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <h1 class="map-title">Find us at this address</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.0680714701124!2d14.429632615718593!3d50.08314837942444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94937363f49b%3A0x66749cf4dcb3e64c!2sOpletalova%201418%2F23%2C%20110%2000%20Nov%C3%A9%20M%C4%9Bsto%2C%20Czechia!5e0!3m2!1sen!2sus!4v1620973201437!5m2!1sen!2sus">
+            </iframe>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/Step_Project/js/script.js"> </script>
+</body>
+
+</html>
