@@ -1,122 +1,208 @@
+:root {
+    --black: #353535;
+    --blue: #636DAB;
+    --pink: #faa1ab;
+    --lavande: #CE9FBF;
+    --white: #FFF;
+    --gray: #d6caca48;
+    --mainBorder:25px;
+}
+
+
+
+/* Здесь дефолтные настройки */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-:root{
-    --black:#353535;
-    --blue:#636DAB;
-    --pink:#FF94A1;
-    --lavande:#CE9FBF;
-}
-
-header {
-    background: #FBFBFB;
-    display: flex;
-    /* max-width: 1920px; */
-    /* max-height: 117px; */
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    margin-top: 29px;
-    /* margin: 50px 120px; */
-
-}
-
-header div a{
-    margin-right: 45px;
-    /* margin-top: 2px; */
-}
-
-div.logo{
-    width: 262px;
-    height: 58px;
-    flex-shrink: 0; 
-}
-
-
-
-.headerNavigation {
-    text-decoration: none;
     color: var(--black);
-    align-self: center;
-    font-size: 20px;
-    margin-top: 20px;
-    /* gap: 100px; */
+    font-family: 'Poppins', sans-serif;
+}
+#button{
+    cursor: pointer;
+    transition: .4s ease;
+    margin-top: 30px;
+    width: 12vw;
+    height: 4vh;
+    border-radius: 40px;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    font-size: large;
+}
+#button:hover{
+    transform: scale(1.1);
+}
+body {
+    margin: 50px 100px;
 }
 
-.Flex {
+
+
+/* Здесь начинается HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: var(--mainBorder);
+}
+header:hover {
+    background-color: var(--gray);
+}
+.header_logo--large {
+    margin: 0 30px 0 0;
+}
+.header_navigation_container {
+    display: flex;
+}
+.header_navigation {
+    text-decoration: none;
+    align-self: center;
+    font-size: 1.1rem;
+    margin: 0 30px;
+}
+.header_navigation--flex {
+    text-decoration: none;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
-    margin-top: 0px;
+    font-size: 1.1rem;
+    margin: 0 30px;
+}
+header a{
+    transition: .4s ease;
+}
+header a:hover{
+    transform: scale(1.1);
 }
 
 
-.productDetails{
+
+/* Здесь начинается Карточка со ссылкой на детали продукта */
+.card_productDetails:hover {
+    background-color: var(--gray);
+    border-radius: var(--mainBorder);
+}
+.card_productDetails {
     display: flex;
-    margin: 50px 120px;
-    justify-content: center;
-    gap: 400px;
-}
-.txt{
-    font-size: 20px;
-    color: var(--black);
-}
-.productDetails .txt button {
-    width: Fixed (272px)px;
-    height: Fixed (78px)px;
-    margin-top: 30px;
-    padding: 10px;
-    gap: 10px;
-    border-radius: 45px;
-    border: 1px 1px 1px 1px;
-    border-color: #131313;
-    background-color: #FFFFFF;
+    padding: 30px;
     justify-content: space-between;
-    opacity: 0px;
-    animation-duration: 300ms;
-} 
-
-
-.productDetails .img img{
+    align-items: center;
+    margin: 30px 0 100px 0;
+}
+.card_productDetails_title--txt {
+    font-size: clamp(10px, 3vw, 40px)
+}
+.card_productDetails_subtitle {
+    font-size: clamp(10px, 5vw, 60px)
+}
+.card_productDetails_img {
+    position: relative;
+}
+.card_productDetails_img--main {
     border-radius: 40px;
-    height: 400px;
+    width: 100%;
+}
+.card_productDetails_img>img:nth-child(2) {
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    right: 0;
+}
+.card_productDetails_img>img:nth-child(3) {
+    position: absolute;
+    width: 30%;
+    bottom: -3%;
+    left: -7%;
+}
+.card_productDetails_img>img:nth-child(4) {
+    position: absolute;
+    width: 30%;
+    bottom: 1%;
+    left: -3%;
+}
+.card_productDetails_img>img:nth-child(5) {
+    position: absolute;
+    width: 19%;
+    bottom: 3%;
+    left: 13%;
+}
+
+
+
+/* Здесь начинается Блок с кнопкой DISCOVER*/
+.discover_block{
+    margin: 30px 0 100px 0;
+    position: relative;
+    border-radius: var(--mainBorder);
+    background-image: url(/webAboutBabyProject/mainPage/bigImage/creative-composition-stylish-cozy-child-room-interior-with-plush-toys-sofa-commode-armchair-carpet-accessories.png);
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+}
+.discover_block>img:nth-child(1){
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    bottom: 40%;
+}
+.discover_block>img:nth-child(2){
+    width: 15%;
+    position: absolute;
+    left: 15%;
+    bottom: 35%;
+}
+.discover_block>img:nth-child(3){
+    width: 15%;
+    position: absolute;
+    right: 15%;
+    bottom: 35%;
+}
+.discover_block>img:nth-child(4){
+    width: 7%;
+    position: absolute;
+    left: 30%;
+    bottom: 25%;
+}
+.discover_block>img:nth-child(5){
+    width: 8%;
+    position: absolute;
+    right: 30%;
+    bottom: 25%;
+}
+.discover_block button{
+    position: absolute;
+    bottom: 15%;
+    left: 41%;
 }
 
 
 
 
-
-
-
-
-/* .headerNavigation img {
-    height: 32px;
-    width: 32px;
-} */
-
-/* h1 {
-    text-transform: uppercase;
-    font-size: 64px;
-    /* line-height: 84px; */
-    /* font: large; */
-    /* font-family: 'Poppins', sans-serif; */
-    /* width: 547px; */
-    /* height: 232px; */
-    /* margin-top: 93px; */
-    /* margin-left: 119.3px; */
-    /* color: #414141; */
-/* h2 {
-    text-transform: uppercase;
-    font-size: 35px;
-    line-height: 61px;
-    font: medium;
-    font-family: 'Poppins', sans-serif;
-    width: 547px;
-    height: 104px;
-    margin-top: 30px;
-    margin-left: 119.3px;
-    color: #383838;} */
-
+/* Здесь начинается блок с выбором категории товаров */
+.product-category-selector--small{
+    margin: 30px 0 100px 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: var(--mainBorder);
+    font-size: large;
+}
+.product-category-selector--small a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+}
+.product-category-selector--small a img{
+    border-radius: 100%;
+}
+.product-category-selector--small:hover{
+    background-color: var(--gray);
+}
+.product-category-selector--small a.category{
+    transition: .4s ease;
+}
+.product-category-selector--small a.category:hover{
+    transform: scale(1.1);
+}
