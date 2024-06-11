@@ -6,6 +6,7 @@
     --white: #FFF;
     --gray: #d6caca48;
     --mainBorder:25px;
+    --mainBorder2:40px;
 }
 
 
@@ -99,7 +100,7 @@ header a:hover{
     position: relative;
 }
 .card_productDetails_img--main {
-    border-radius: 40px;
+    border-radius: var(--mainBorder2);
     width: 100%;
 }
 .card_productDetails_img>img:nth-child(2) {
@@ -205,4 +206,102 @@ header a:hover{
 }
 .product-category-selector--small a.category:hover{
     transform: scale(1.1);
+}
+
+
+
+/* Здесь начинается Карточка со ссылкой на детали продукта НОМЕР 2 */
+.card_productDetails2:hover {
+    background-color: var(--gray);
+    border-radius: var(--mainBorder);
+}
+.card_productDetails2 {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 100px 0;
+    gap: 200px;
+}
+.card_productDetails_title2--txt {
+    font-size: clamp(10px, 3vw, 40px);
+    margin: 30px 0;
+}
+.card_productDetails_subtitle2 {
+    font-size: clamp(10px, 3vw, 30px)
+}
+
+
+
+.card_productDetails_imgg {
+    position: relative;
+}
+.card_productDetails_img--main {
+    border-radius: var(--mainBorder2);
+    height: 100%;
+}
+.card_productDetails_imgg>img:nth-child(2) {
+    position: absolute;
+    width: 25%;
+    top: 0;
+    right: 110%;
+}
+.card_productDetails_imgg>img:nth-child(3) {
+    position: absolute;
+    width: 35%;
+    bottom: -2%;
+    left: -15%;
+}
+.card_productDetails_imgg>img:nth-child(4) {
+    position: absolute;
+    width: 35%;
+    bottom: -2%;
+    right: 25%;
+}
+
+
+
+
+
+
+
+
+/* Здесь начинаются 3 большие карточки по центру */
+
+.threecards:hover{
+    background-color: var(--gray);
+    border-radius: var(--mainBorder);
+}
+.threecards {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    margin: 30px 0 100px 0;
+    position: relative;
+    gap: 100px;
+}
+
+.cards_item img {
+    border-radius: var(--mainBorder2);
+}
+/* .cards_item img:hover {
+    transform: scale(1.1);
+    transition: .4s ease;
+} */
+
+.cards_description {
+    text-align: center;
+    margin-top: 30px;
+    width: 550px;
+    font-size: clamp(10px, 3vw, 30px);
+}
+
+
+
+
+/* Здесь начинается блок с BEST SELLER */
+
+.our_best_seller img {
+    justify-content: center;
+    border-radius: var(--mainBorder2);
 }
