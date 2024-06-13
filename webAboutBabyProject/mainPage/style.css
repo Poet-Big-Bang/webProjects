@@ -50,7 +50,7 @@ header:hover {
     background-color: var(--gray);
 }
 .header_logo--large {
-    margin: 0 30px 0 0;
+    margin: 0 10px 0 0;
 }
 .header_navigation_container {
     display: flex;
@@ -59,15 +59,15 @@ header:hover {
     text-decoration: none;
     align-self: center;
     font-size: 1.1rem;
-    margin: 0 30px;
+    margin: 0 10px;
 }
 .header_navigation--flex {
     text-decoration: none;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.1rem;
-    margin: 0 30px;
+    font-size: clamp(1px, 1vw, 10px);
+    margin: 0 10px;
 }
 header a{
     transition: .4s ease;
@@ -233,26 +233,26 @@ header a:hover{
 
 
 
-.card_productDetails_imgg {
+.card_productDetails_img--second {
     position: relative;
 }
 .card_productDetails_img--main {
     border-radius: var(--mainBorder2);
     height: 100%;
 }
-.card_productDetails_imgg>img:nth-child(2) {
+.card_productDetails_img--second>img:nth-child(2) {
     position: absolute;
     width: 25%;
     top: 0;
     right: 110%;
 }
-.card_productDetails_imgg>img:nth-child(3) {
+.card_productDetails_img--second>img:nth-child(3) {
     position: absolute;
     width: 35%;
     bottom: -2%;
     left: -15%;
 }
-.card_productDetails_imgg>img:nth-child(4) {
+.card_productDetails_img--second>img:nth-child(4) {
     position: absolute;
     width: 35%;
     bottom: -2%;
@@ -267,7 +267,6 @@ header a:hover{
 
 
 /* Здесь начинаются 3 большие карточки по центру */
-
 .threecards:hover{
     background-color: var(--gray);
     border-radius: var(--mainBorder);
@@ -276,24 +275,26 @@ header a:hover{
     display: flex;
     padding: 30px;
     justify-content: space-between;
-    margin: 30px 0 100px 0;
+    margin: 0 0 100px 0;
     position: relative;
-    gap: 100px;
-}
 
+}
+.cards_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+
+}
 .cards_item img {
     border-radius: var(--mainBorder2);
+    width: 95%;
 }
-/* .cards_item img:hover {
-    transform: scale(1.1);
-    transition: .4s ease;
-} */
-
-.cards_description {
+.cards_description{
     text-align: center;
     margin-top: 30px;
-    width: 550px;
-    font-size: clamp(10px, 3vw, 30px);
+    width: 80%;
+    font-size: clamp(5px, 3vw, 30px);
 }
 
 
