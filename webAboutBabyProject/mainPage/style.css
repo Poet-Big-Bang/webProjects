@@ -5,8 +5,8 @@
     --lavande: #CE9FBF;
     --white: #FFF;
     --gray: #d6caca48;
-    --mainBorder:25px;
-    --mainBorder2:40px;
+    --mainBorder: 25px;
+    --mainBorder2: 40px;
 }
 
 
@@ -19,7 +19,8 @@
     color: var(--black);
     font-family: 'Poppins', sans-serif;
 }
-#button{
+
+#button {
     cursor: pointer;
     transition: .4s ease;
     margin-top: 30px;
@@ -30,9 +31,11 @@
     background-color: var(--white);
     font-size: large;
 }
-#button:hover{
+
+#button:hover {
     transform: scale(1.1);
 }
+
 body {
     margin: 50px 100px;
 }
@@ -46,21 +49,26 @@ header {
     padding: 30px;
     border-radius: var(--mainBorder);
 }
+
 header:hover {
     background-color: var(--gray);
 }
+
 .header_logo--large {
     margin: 0 10px 0 0;
 }
+
 .header_navigation_container {
     display: flex;
 }
+
 .header_navigation {
     text-decoration: none;
     align-self: center;
     font-size: 1.1rem;
     margin: 0 10px;
 }
+
 .header_navigation--flex {
     text-decoration: none;
     display: inline-flex;
@@ -69,10 +77,12 @@ header:hover {
     font-size: clamp(1px, 1vw, 10px);
     margin: 0 10px;
 }
-header a{
+
+header a {
     transition: .4s ease;
 }
-header a:hover{
+
+header a:hover {
     transform: scale(1.1);
 }
 
@@ -83,6 +93,7 @@ header a:hover{
     background-color: var(--gray);
     border-radius: var(--mainBorder);
 }
+
 .card_productDetails {
     display: flex;
     padding: 30px;
@@ -90,37 +101,45 @@ header a:hover{
     align-items: center;
     margin: 30px 0 100px 0;
 }
+
 .card_productDetails_title--txt {
     font-size: clamp(10px, 3vw, 40px)
 }
+
 .card_productDetails_subtitle {
     font-size: clamp(10px, 5vw, 60px)
 }
+
 .card_productDetails_img {
     position: relative;
 }
+
 .card_productDetails_img--main {
     border-radius: var(--mainBorder2);
     width: 100%;
 }
+
 .card_productDetails_img>img:nth-child(2) {
     position: absolute;
     width: 20%;
     bottom: 0;
     right: 0;
 }
+
 .card_productDetails_img>img:nth-child(3) {
     position: absolute;
     width: 30%;
     bottom: -3%;
     left: -7%;
 }
+
 .card_productDetails_img>img:nth-child(4) {
     position: absolute;
     width: 30%;
     bottom: 1%;
     left: -3%;
 }
+
 .card_productDetails_img>img:nth-child(5) {
     position: absolute;
     width: 19%;
@@ -131,7 +150,7 @@ header a:hover{
 
 
 /* Здесь начинается Блок с кнопкой DISCOVER*/
-.discover_block{
+.discover_block {
     margin: 30px 0 100px 0;
     position: relative;
     border-radius: var(--mainBorder);
@@ -140,37 +159,43 @@ header a:hover{
     width: 100%;
     height: 75vh;
 }
-.discover_block>img:nth-child(1){
+
+.discover_block>img:nth-child(1) {
     width: 20%;
     position: absolute;
     left: 40%;
     bottom: 40%;
 }
-.discover_block>img:nth-child(2){
+
+.discover_block>img:nth-child(2) {
     width: 15%;
     position: absolute;
     left: 15%;
     bottom: 35%;
 }
-.discover_block>img:nth-child(3){
+
+.discover_block>img:nth-child(3) {
     width: 15%;
     position: absolute;
     right: 15%;
     bottom: 35%;
 }
-.discover_block>img:nth-child(4){
+
+.discover_block>img:nth-child(4) {
     width: 7%;
     position: absolute;
     left: 30%;
     bottom: 25%;
 }
-.discover_block>img:nth-child(5){
+
+.discover_block>img:nth-child(5) {
     width: 8%;
     position: absolute;
     right: 30%;
     bottom: 25%;
 }
-.discover_block button{
+
+.discover_block button {
     position: absolute;
     bottom: 15%;
     left: 41%;
@@ -180,7 +205,7 @@ header a:hover{
 
 
 /* Здесь начинается блок с выбором категории товаров */
-.product-category-selector--small{
+.product-category-selector--small {
     margin: 30px 0 100px 0;
     padding: 30px;
     display: flex;
@@ -188,23 +213,28 @@ header a:hover{
     border-radius: var(--mainBorder);
     font-size: large;
 }
-.product-category-selector--small a{
+
+.product-category-selector--small a {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
     gap: 5px;
 }
-.product-category-selector--small a img{
+
+.product-category-selector--small a img {
     border-radius: 100%;
 }
-.product-category-selector--small:hover{
+
+.product-category-selector--small:hover {
     background-color: var(--gray);
 }
-.product-category-selector--small a.category{
+
+.product-category-selector--small a.category {
     transition: .4s ease;
 }
-.product-category-selector--small a.category:hover{
+
+.product-category-selector--small a.category:hover {
     transform: scale(1.1);
 }
 
@@ -215,6 +245,7 @@ header a:hover{
     background-color: var(--gray);
     border-radius: var(--mainBorder);
 }
+
 .card_productDetails2 {
     display: flex;
     padding: 30px;
@@ -223,10 +254,12 @@ header a:hover{
     margin: 30px 0 100px 0;
     gap: 200px;
 }
+
 .card_productDetails_title2--txt {
     font-size: clamp(10px, 3vw, 40px);
     margin: 30px 0;
 }
+
 .card_productDetails_subtitle2 {
     font-size: clamp(10px, 3vw, 30px)
 }
@@ -236,22 +269,26 @@ header a:hover{
 .card_productDetails_img--second {
     position: relative;
 }
+
 .card_productDetails_img--main {
     border-radius: var(--mainBorder2);
     height: 100%;
 }
+
 .card_productDetails_img--second>img:nth-child(2) {
     position: absolute;
     width: 25%;
     top: 0;
     right: 110%;
 }
+
 .card_productDetails_img--second>img:nth-child(3) {
     position: absolute;
     width: 35%;
     bottom: -2%;
     left: -15%;
 }
+
 .card_productDetails_img--second>img:nth-child(4) {
     position: absolute;
     width: 35%;
@@ -267,10 +304,11 @@ header a:hover{
 
 
 /* Здесь начинаются 3 большие карточки по центру */
-.threecards:hover{
+.threecards:hover {
     background-color: var(--gray);
     border-radius: var(--mainBorder);
 }
+
 .threecards {
     display: flex;
     padding: 30px;
@@ -279,18 +317,21 @@ header a:hover{
     position: relative;
 
 }
-.cards_item{
+
+.cards_item {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 33%;
 
 }
+
 .cards_item img {
     border-radius: var(--mainBorder2);
     width: 95%;
 }
-.cards_description{
+
+.cards_description {
     text-align: center;
     margin-top: 30px;
     width: 80%;
@@ -300,9 +341,94 @@ header a:hover{
 
 
 
-/* Здесь начинается блок с BEST SELLER */
 
-.our_best_seller img {
-    justify-content: center;
+/* Здесь начинается блок с BEST SELLER */
+.best-seller:hover {
+    background-color: var(--gray);
+    border-radius: var(--mainBorder);
+}
+
+.best-seller {
+    text-align: center;
+    margin: 0 0 100px 0;
+    padding: 30px;
+}
+
+.best-seller__content {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+
+}
+
+.product-card {
+    width: 30%;
+
+    position: relative;
+}
+
+.highlighted-image {
+    width: 50%;
+
+}
+
+.product-card img:nth-child(1) {
+    width: 100%;
+    height: 87%;
+}
+
+.highlighted-image img {
+    width: 100%;
+    height: 100%;
     border-radius: var(--mainBorder2);
+}
+
+.best-seller__title {
+    font-size: clamp(5px, 3vw, 40px);
+    font-weight: 400;
+}
+
+.best-seller__content .product-card img:nth-child(2) {
+    position: absolute;
+    width: 30%;
+    top: 15%;
+    left: 0;
+}
+
+.best-seller__content .product-card img:nth-child(3) {
+    position: absolute;
+    width: 5%;
+    top: 13%;
+    left: 4%;
+}
+
+.best-seller__content .product-card .product-card__details {
+    display: flex;
+    height: 13%;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+    background-color: #FFB59B;
+    align-items: center;
+}
+
+.best-seller__content .product-card .product-card__details p {
+    font-size: clamp(5px, 1.5vw, 30px);
+    color: var(--white);
+}
+.best-seller__content .product-card .product-card__details button{
+    font-size: clamp(5px, 1.5vw, 30px);
+    color: var(--white);
+    border: none; /* Удаление рамки */
+    background-color: transparent; /* Удаление фона */
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+
+}
+.best-seller__content .product-card .product-card__details button.clicked {
+    color: var(--lavande); 
 }
