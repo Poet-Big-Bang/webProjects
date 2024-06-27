@@ -15,7 +15,7 @@
 //     console.log('all right'); // Вывод в консоль для проверки работы скрипта
 // });
 
-const button = document.querySelector('.product-card-details__add button');
+// const button = document.querySelector('.product-card-details__add button');
 
 // Добавляем обработчик события клика
 button.addEventListener('click', function() {

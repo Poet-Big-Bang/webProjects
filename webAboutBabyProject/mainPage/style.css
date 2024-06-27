@@ -18,6 +18,7 @@
     box-sizing: border-box;
     color: var(--black);
     font-family: 'Poppins', sans-serif;
+    /* outline: 1px solid red; */
 }
 
 #button {
@@ -432,3 +433,76 @@ button:hover {
 .best-seller__content .product-card .product-card__details button.clicked {
     color: var(--lavande); 
 }
+
+
+
+/* Здесь блок с горизонтальным отделительным Логом */
+.hr-image__logo img{
+    width: 100%;
+}
+
+
+
+/* Здесь блок с New ARRIVALS */
+.new-arrivals__container{
+    text-align: center;
+}
+.new-arrivals__container > button{
+    background: none; 
+    border: none;
+    color: var(--lavande);
+    cursor: pointer;
+}
+
+.new-arrivals__gridContainer{
+    /* display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 20%;
+    justify-content: center;
+    align-items: center;  */
+    display: flex;
+    
+}
+
+.newArrivalsProduct-card1, 
+.newArrivalsProduct-card2, 
+.newArrivalsProduct-card3, 
+.newArrivalsProduct-card4, 
+.newArrivalsProduct-card5, 
+.newArrivalsProduct-card6 {
+    width: 33%;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: start;
+}
+
+.newArrivalsProduct-card1 img, 
+.newArrivalsProduct-card2 img, 
+.newArrivalsProduct-card3 img, 
+.newArrivalsProduct-card4 img, 
+.newArrivalsProduct-card5 img, 
+.newArrivalsProduct-card6 img {
+    max-width: 70%;
+}
+
+.newArrivalsProduct-card1 button, 
+.newArrivalsProduct-card2 button, 
+.newArrivalsProduct-card3 button, 
+.newArrivalsProduct-card4 button, 
+.newArrivalsProduct-card5 button, 
+.newArrivalsProduct-card6 button {
+    width: 100%;
+
+
+}
+
+.newArrivalsProduct-card1 p, 
+.newArrivalsProduct-card2 p, 
+.newArrivalsProduct-card3 p, 
+.newArrivalsProduct-card4 p, 
+.newArrivalsProduct-card5 p, 
+.newArrivalsProduct-card6 p {
+align-self: flex-start;
+}
+
