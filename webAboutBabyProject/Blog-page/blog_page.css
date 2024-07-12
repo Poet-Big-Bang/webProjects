@@ -1,0 +1,137 @@
+:root {
+    --black: #353535;
+    --blue: #636DAB;
+    --pink: #faa1ab;
+    --lavande: #CE9FBF;
+    --white: #FFF;
+    --gray: #d6caca48;
+    --mainBorder: 25px;
+    --mainBorder2: 40px;
+}
+
+
+
+/* Здесь дефолтные настройки */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    /* outline: 1px solid red; */
+}
+
+/* Здесь начинается HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: var(--mainBorder);
+}
+
+header:hover {
+    background-color: var(--gray);
+}
+
+.header_logo--large {
+    margin: 0 10px 0 0;
+}
+
+.header_navigation_container {
+    display: flex;
+}
+
+.header_navigation {
+    text-decoration: none;
+    align-self: center;
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+
+.header_navigation--flex {
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(1px, 1vw, 10px);
+    margin: 0 10px;
+}
+
+header a {
+    transition: .4s ease;
+}
+
+header a:hover {
+    transform: scale(1.1);
+}
+
+
+/* ЗДЕСЬ НАЧИНАЕТСЯ БЛОГ*/
+
+.grid-container {
+    margin: 0 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Стили для элементов сетки */
+
+.grid-item {
+    padding: 20px;
+    text-align: left;
+}
+
+.grid-container img {
+    height: 600px;
+    display: block;
+    width: 750px;
+}
+
+.grid-item h1 {
+    margin-bottom: 30px;
+    font-size: xxx-large;
+}
+
+.grid-item h3 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: red;
+}
+
+.grid-item  p {
+    margin-bottom: 50px;
+    font-size: xx-large;
+}
+
+.button {
+    margin-right: 50px;
+    justify-content: flex-end;
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+
+.button:hover {
+    background-color: #0abab5;
+}
+
+.grid-item a:last-of-type {
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+.grid-item a:last-of-type:hover {
+    transform: scale(1.2);
+}
