@@ -8,6 +8,8 @@
     --red: #E77373;
     --mainBorder: 25px;
     --mainBorder2: 40px;
+    --littleMargin:30px 50px;
+    --bigMargin:50px 150px;
 }
 
 
@@ -32,7 +34,7 @@ a {
     margin-top: 30px;
     width: 12vw;
     height: 4vh;
-    border-radius: 40px;
+    border-radius: 80px;
     border: 1px solid var(--black);
     background-color: var(--white);
     font-size: large;
@@ -42,9 +44,7 @@ a {
     transform: scale(1.1);
 }
 
-body {
-    margin: 50px 100px;
-}
+body {}
 
 
 
@@ -54,11 +54,11 @@ header {
     justify-content: space-between;
     padding: 30px;
     border-radius: var(--mainBorder);
+    margin: var(--bigMargin);
+
 }
 
-header:hover {
-    background-color: var(--gray);
-}
+
 
 .header_logo--large {
     margin: 0 10px 0 0;
@@ -72,7 +72,7 @@ header:hover {
     text-decoration: none;
     align-self: center;
     font-size: 1.1rem;
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
 .header_navigation--flex {
@@ -105,7 +105,7 @@ header a:hover {
     padding: 30px;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0 100px 0;
+    margin: var(--littleMargin);
 }
 
 .card_productDetails_title--txt {
@@ -159,7 +159,7 @@ header a:hover {
 .discover_block {
     margin: 30px 0 100px 0;
     position: relative;
-    border-radius: var(--mainBorder);
+    /* border-radius: var(--mainBorder); */
     background-image: url(/webAboutBabyProject/mainPage/bigImage/creative-composition-stylish-cozy-child-room-interior-with-plush-toys-sofa-commode-armchair-carpet-accessories.png);
     background-size: cover;
     width: 100%;
@@ -212,7 +212,7 @@ header a:hover {
 
 /* Здесь начинается блок с выбором категории товаров */
 .product-category-selector--small {
-    margin: 30px 0 100px 0;
+    margin: var(--bigMargin);
     padding: 30px;
     display: flex;
     justify-content: space-around;
@@ -257,7 +257,7 @@ header a:hover {
     padding: 30px;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0 100px 0;
+    margin: var(--littleMargin);
     gap: 200px;
 }
 
@@ -319,7 +319,7 @@ header a:hover {
     display: flex;
     padding: 30px;
     justify-content: space-between;
-    margin: 0 0 100px 0;
+    margin: var(--littleMargin);
     position: relative;
 
 }
@@ -454,7 +454,7 @@ button:hover {
 
 /* Здесь блок с New ARRIVALS */
 .new-arrivals__container {
-    margin: 0 0 100px 0;
+    margin: var(--littleMargin);
     text-align: center;
 }
 
@@ -515,7 +515,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     background-color: #EEE799;
-    margin: 0 0 100px 0;
+    margin: 50px 0;
 }
 
 .baby_needs_img img {
@@ -587,23 +587,25 @@ button:hover {
 
 
 
-
-
-
-
-
 /* Здесь начинается FOOTER */
 footer {
     background-color: var(--black);
     display: flex;
     justify-content: space-around;
-    padding: 3% 10%;
+    padding: 3% 3%;
 }
 
 footer .footer_card--1>*,
 footer .footer_card--2>*,
-footer .footer_card--3>* {
+footer .footer_card--3>*,
+footer .footer_card--4>* {
     margin: 10px;
+}
+
+footer .footer_card--2,
+footer .footer_card--3,
+footer .footer_card--4 {
+    margin-top: 15px;
 }
 
 footer h1,
