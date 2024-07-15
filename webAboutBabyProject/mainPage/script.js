@@ -29,3 +29,10 @@ button.addEventListener('click', function() {
 
     console.log('all right'); // Вывод в консоль для проверки работы скрипта
 });
+
+
+
+
+function toggleMenu() {
+    document.querySelector('header').classList.toggle('menu-open');
+}
