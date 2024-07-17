@@ -1,0 +1,113 @@
+/* Здесь дефолтные настройки */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    transition: .4s ease;
+    /* outline: 1px solid red; */
+}
+
+
+:root {
+    --black: #353535;
+    --blue: #636DAB;
+    --pink: #faa1ab;
+    --lavande: #CE9FBF;
+    --white: #FFF;
+    --gray: #d6caca48;
+    --red: #E77373;
+    --mobileMargin:5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#button {
+    cursor: pointer;
+    margin-top: 30px;
+    width: 12vw;
+    height: 4vh;
+    border-radius: 80px;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    font-size: large;
+}
+
+#button:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Здесь начинается HEADER */
+.header_container {
+    margin: var(--mobileMargin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.hamburger_menu {
+    position: relative;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon div {
+    width: 30px;
+    height: 4px;
+    background-color: var(--black);
+    margin: 3px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu_text {
+    color: var(--black);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.menu_items {
+    display: none;
+    position: absolute;
+    /* margin-left: 5%; */
+    /* top: 150%; */
+    /* left: -100%; */
+    /* right: 0; */
+    /* background-color: black; */
+    width: calc(100vw - 100%);
+    z-index: 1;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(202, 7, 7, 0.916); */
+
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-gap: 10px;
+}
+
+.menu_items a {
+    color: var(--black);
+    padding: 12px 16px;
+    text-decoration: none;
+    background-color: var(--white);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header_navigation--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
