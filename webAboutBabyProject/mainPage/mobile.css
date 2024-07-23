@@ -18,7 +18,8 @@
     --white: #FFF;
     --gray: #d6caca48;
     --red: #E77373;
-    --mobileMargin:5%;
+    --mobileMargin: 5%;
+    --mainBorder: 35px;
 }
 
 a {
@@ -28,12 +29,13 @@ a {
 #button {
     cursor: pointer;
     margin-top: 30px;
-    width: 12vw;
-    height: 4vh;
+    width: 100%;
+    height: 10vh;
     border-radius: 80px;
     border: 1px solid var(--black);
     background-color: var(--white);
     font-size: large;
+    font-weight: bold;
 }
 
 #button:hover {
@@ -80,17 +82,10 @@ a {
 .menu_items {
     display: none;
     position: absolute;
-    /* margin-left: 5%; */
-    /* top: 150%; */
-    /* left: -100%; */
-    /* right: 0; */
-    /* background-color: black; */
-    width: calc(100vw - 100%);
+    width: 91vw;
     z-index: 1;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* box-shadow: 0 4px 8px rgba(202, 7, 7, 0.916); */
-
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-gap: 10px;
@@ -110,4 +105,445 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+
+
+/* Здесь начинается Карточка со ссылкой на детали продукта */
+.card_productDetails {
+    display: flex;
+    flex-direction: column;
+    margin: var(--mobileMargin);
+    gap: 7vh;
+}
+
+.card_productDetails_title--txt {
+    font-size: clamp(10px, 5vw, 100px)
+}
+
+.card_productDetails_subtitle {
+    font-size: clamp(10px, 7vw, 100px)
+}
+
+.card_productDetails_img {
+    position: relative;
+}
+
+.card_productDetails_img--main {
+    border-radius: var(--mainBorder);
+    background-size: cover;
+    width: 100%;
+    height: 525px;
+}
+
+.card_productDetails_img>img:nth-child(2) {
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+    right: 0;
+}
+
+.card_productDetails_img>img:nth-child(3) {
+    position: absolute;
+    width: 30%;
+    bottom: -3%;
+    left: -7%;
+}
+
+.card_productDetails_img>img:nth-child(4) {
+    position: absolute;
+    width: 30%;
+    bottom: 1%;
+    left: -3%;
+}
+
+.card_productDetails_img>img:nth-child(5) {
+    position: absolute;
+    width: 19%;
+    bottom: 3%;
+    left: 13%;
+}
+
+
+
+/* Здесь начинается Блок с кнопкой DISCOVER*/
+.discover_block {
+    margin: 30px 0 100px 0;
+    position: relative;
+    background-image: url(/webAboutBabyProject/mainPage/bigImage/creative-composition-stylish-cozy-child-room-interior-with-plush-toys-sofa-commode-armchair-carpet-accessories.png);
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+}
+
+.discover_block>a>img:nth-child(1) {
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    bottom: 40%;
+}
+
+.discover_block>img:nth-child(2) {
+    width: 15%;
+    position: absolute;
+    left: 15%;
+    bottom: 60%;
+}
+
+.discover_block>img:nth-child(3) {
+    width: 15%;
+    position: absolute;
+    right: 15%;
+    bottom: 57%;
+}
+
+.discover_block>img:nth-child(4) {
+    width: 7%;
+    position: absolute;
+    left: 30%;
+    bottom: 50%;
+}
+
+.discover_block>img:nth-child(5) {
+    width: 8%;
+    position: absolute;
+    right: 30%;
+    bottom: 50%;
+}
+
+/* Здесь начинается блок с выбором категории товаров */
+.product-category-selector--small {
+    margin: var(--mobileMargin);
+    margin-bottom: 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.product-category-selector--small a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-category-selector--small a img {
+    border-radius: 100%;
+}
+
+.product-category-selector--small a.category:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Здесь начинается Карточка со ссылкой на детали продукта НОМЕР 2 */
+
+
+.card_productDetails2 {
+    display: flex;
+    flex-direction: column;
+    /* padding: 30px; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin: var(--mobileMargin);
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.card_productDetails_title--txt {
+    /* font-size: clamp(10px, 4vw, 40px); */
+    font-size: 4.8vw;
+    margin: 30px 0;
+    position: relative;
+}
+
+.card_productDetails_title--txt img {
+    position: absolute;
+    width: 35%;
+    top: -60%;
+    right: 0%;
+}
+
+.card_productDetails_subtitle2 {
+    font-size: 4vw;
+}
+
+
+
+.card_productDetails_img--second {
+    position: relative;
+}
+
+.card_productDetails_img--main {
+    border-radius: var(--mainBorder);
+    height: 100%;
+}
+
+.card_productDetails_img--second>img:nth-child(2) {
+    position: absolute;
+    width: 40%;
+    bottom: -10%;
+    left: 40%;
+}
+
+.card_productDetails_img--second>img:nth-child(3) {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    right: 0%;
+}
+
+
+
+
+/* Здесь начинаются 3 большие карточки по центру */
+.threecards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    margin: var(--mobileMargin);
+    position: relative;
+
+}
+
+.cards_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10PX;
+}
+
+.cards_item img {
+    border-radius: var(--mainBorder);
+    width: 95%;
+}
+
+.cards_description {
+    text-align: center;
+    width: 80%;
+    font-size: 4.4vw;
+    font-weight: 500;
+}
+
+
+/* Здесь блок с горизонтальным отделительным Логом */
+.hr-image__logo img {
+    width: 100%;
+}
+
+
+
+/* Здесь блок с New ARRIVALS */
+.new-arrivals__container {
+    margin: var(--mobileMargin);
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-arrivals__container>h1 {
+    font-size: 9vw;
+    font-weight: 500;
+}
+
+.new-arrivals__container>button {
+    background: none;
+    border: none;
+    color: #8F6EC5;
+    cursor: pointer;
+    font-size: 5vw;
+}
+
+.new-arrivals__flexContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.newArrivalsProduct-card {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.newArrivalsProduct-card img {
+    width: 100%;
+}
+
+.product-detais__title p:nth-of-type(1) {
+    margin-top: 20px;
+    font-size: 4.5vw;
+
+}
+
+.product-detais__title p:nth-of-type(2) {
+    margin-top: 20px;
+    font-size: 4.5vw;
+
+}
+
+
+
+/* Здесь начинается блок с EVERITHING A BABY NEEDS */
+.baby_needs_conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #EEE799;
+    margin: 50px 0;
+}
+
+.baby_needs_img img {
+    width: 100%;
+    border-bottom-left-radius: var(--mainBorder);
+    border-bottom-right-radius: var(--mainBorder);
+
+}
+
+.card_baby_needs {
+    margin: var(--mobileMargin);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: clamp(5px, 1vw, 2000px);
+    gap: 10px;
+}
+
+.baby_needs_conteiner .card_baby_needs h1 {
+    font-size: 8vw;
+    font-weight: 500;
+}
+
+.card_baby_needs p {
+    font-size: 4vw;
+    font-weight: 500;
+    margin-left: var(--mobileMargin);
+}
+
+.card_baby_needs a {
+    font-size: 4vw;
+    font-weight: 500;
+    margin-left: var(--mobileMargin);
+
+}
+
+.card_baby_needs>img[src="/webAboutBabyProject/mainPage/general images/clock-fill.png"],
+.card_baby_needs>img[src="/webAboutBabyProject/mainPage/general images/geo-alt-fill.png"] {
+    width: 5%;
+}
+
+.card_baby_needs a[href^="tel:"] {
+    margin-bottom: 25vh;
+}
+
+.card_baby_needs img[src="illustration/star.png"] {
+    position: absolute;
+    width: 30%;
+    right: 20%;
+    bottom: 20%;
+}
+
+.baby_needs_conteiner img[src="arrow mobi;e.png"] {
+    position: absolute;
+    width: 15%;
+    bottom: 15%;
+    right: 35%;
+}
+
+.baby_needs_conteiner .card_baby_needs>#button {
+    align-self: center;
+    width: 50%;
+    font-weight: 500;
+}
+
+
+
+
+/* Здесь начинается FOOTER */
+footer {
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3% 3%;
+}
+
+footer .footer_card--1>*,
+footer .footer_card--2>*,
+footer .footer_card--3>*,
+footer .footer_card--4>* {
+    margin: 10px;
+}
+
+footer .footer_card--1,
+footer .footer_card--2,
+footer .footer_card--3,
+footer .footer_card--4 {
+    margin: var(--mobileMargin);
+}
+
+footer h1,
+footer p,
+footer a {
+    color: white;
+}
+
+footer .footer_card--1 div>* {
+    margin: 0 10px;
+
+}
+
+.footer_card--2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_card--2 h1 {
+    color: var(--red);
+}
+
+.footer_card--3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_card--3 h1 {
+    color: var(--red);
+}
+
+.social_media {
+    display: flex;
+    gap: 40px;
+}
+
+.footer_card--4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_card--4 form input[type="email"] {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.footer_card--4 form button[type="submit"] {
+    cursor: pointer;
+    text-align: left;
+    margin-left: 0;
+    border: none;
+    color: white;
+    width: fit-content;
+    background-color: var(--black);
+    padding: 10px;
+}
+
+footer>p {
+    align-self: center;
+    color: var(--red);
+    margin: var(--mobileMargin);
 }
