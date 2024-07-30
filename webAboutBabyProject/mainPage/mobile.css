@@ -26,7 +26,7 @@ a {
     text-decoration: none;
 }
 
-#button {
+button {
     cursor: pointer;
     margin-top: 30px;
     width: 100%;
@@ -38,7 +38,7 @@ a {
     font-weight: bold;
 }
 
-#button:hover {
+button:hover {
     transform: scale(1.1);
 }
 
@@ -432,8 +432,8 @@ a {
 
 }
 
-.card_baby_needs>img[src="/webAboutBabyProject/mainPage/general images/clock-fill.png"],
-.card_baby_needs>img[src="/webAboutBabyProject/mainPage/general images/geo-alt-fill.png"] {
+.card_baby_needs>img[src="/webAboutBabyProject/mainPage/general-images/clock-fill.png"],
+.card_baby_needs>img[src="/webAboutBabyProject/mainPage/general-images/geo-alt-fill.png"] {
     width: 5%;
 }
 
@@ -448,7 +448,7 @@ a {
     bottom: 20%;
 }
 
-.baby_needs_conteiner img[src="arrow mobi;e.png"] {
+.baby_needs_conteiner img[src="/webAboutBabyProject/mainPage/mobileImages/arrowMobile.png"] {
     position: absolute;
     width: 15%;
     bottom: 15%;
